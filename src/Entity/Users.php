@@ -7,15 +7,18 @@
  */
 
 namespace Entity;
+use Doctrine\ORM\Mapping\Entity;
+use Doctrine\ORM\Mapping\Table;
+use Doctrine\ORM\Mapping\Id;
+use Doctrine\ORM\Mapping\GeneratedValue;
+use Doctrine\ORM\Mapping\Column;
 
-use Doctrine\ORM\Mapping as ORM;
-
-/**Users
-*
-*@Entity
-*@Tables(name="users")
-*/
-
+/**
+ * Class Users
+ * @package Entity
+ *@Entity
+ *@Table(name="users")
+ */
 class Users
 {
     /**

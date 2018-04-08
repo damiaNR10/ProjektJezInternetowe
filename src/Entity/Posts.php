@@ -7,9 +7,19 @@
  */
 
 namespace Entity;
-use Entity\Users;
-use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\Entity;
+use Doctrine\ORM\Mapping\Table;
+use Doctrine\ORM\Mapping\Id;
+use Doctrine\ORM\Mapping\GeneratedValue;
+use Doctrine\ORM\Mapping\Column;
+use Doctrine\ORM\Mapping\OneToOne;
 
+/**
+ * Class Posts
+ * @package Entity
+ * @Entity
+ * @Table(name="Posts")
+ */
 
 class Posts
 {
@@ -25,7 +35,7 @@ class Posts
      * @var integer
      *
      * @Column(name="userid", type="integer")
-     * @ORM\OneToOne(targetEntity="Users")
+     * @OneToOne(targetEntity="Users")
      */
     private $userid;
     /**
@@ -133,5 +143,19 @@ class Posts
     public function getDate()
     {
         return $this->date;
+    }
+
+    /**
+     * Set userid
+     *
+     * @param integer $userid
+     *
+     * @return Posts
+     */
+    public function setUserid($userid)
+    {
+        $this->userid = $userid;
+
+        return $this;
     }
 }

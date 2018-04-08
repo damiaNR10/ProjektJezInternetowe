@@ -7,8 +7,18 @@
  */
 
 namespace Entity;
+use Doctrine\ORM\Mapping\Entity;
+use Doctrine\ORM\Mapping\Table;
+use Doctrine\ORM\Mapping\Id;
+use Doctrine\ORM\Mapping\GeneratedValue;
+use Doctrine\ORM\Mapping\Column;
 
-
+/**
+ * Class Comments
+ * @package Entity
+ * @Entity
+ * @Table(name="Comments")
+ */
 class Comments
 {
     /**
@@ -44,19 +54,31 @@ class Comments
      *
      * @return integer
      */
-
     public function getId()
     {
         return $this->id;
     }
 
     /**
+     * Set username
+     *
+     * @param string $username
+     *
+     * @return Comments
+     */
+    public function setUsername($username)
+    {
+        $this->username = $username;
+
+        return $this;
+    }
+
+    /**
      * Get username
      *
-     * @return integer
+     * @return string
      */
-
-    public function getUserName()
+    public function getUsername()
     {
         return $this->username;
     }
@@ -65,7 +87,8 @@ class Comments
      * Set content
      *
      * @param string $content
-     * @return string
+     *
+     * @return Comments
      */
     public function setContent($content)
     {
@@ -73,6 +96,7 @@ class Comments
 
         return $this;
     }
+
     /**
      * Get content
      *
@@ -86,8 +110,9 @@ class Comments
     /**
      * Set date
      *
-     * @param string $date
-     * @return string
+     * @param \DateTime $date
+     *
+     * @return Comments
      */
     public function setDate($date)
     {
@@ -95,10 +120,11 @@ class Comments
 
         return $this;
     }
+
     /**
      * Get date
      *
-     * @return string
+     * @return \DateTime
      */
     public function getDate()
     {
