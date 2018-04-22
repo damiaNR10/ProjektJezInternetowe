@@ -227,3 +227,19 @@ nav ul li {
     line-height: 18px;
     padding-bottom:50px;
 }
+
+footer {
+    line-height: 14px;
+    padding: 19px 0 19px 0;
+    background-color: #293545;
+    font-size: 14px;
+}
+
+footer a {
+    color:#ffffff;
+}
+
+footer a span {
+    color: #F57676;
+}
+
