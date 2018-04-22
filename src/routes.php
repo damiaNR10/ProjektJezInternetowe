@@ -6,6 +6,9 @@ $app->get('/', function () use ($app) {
 })
     ->bind('homepage')
 ;
+$app->get('/login', function () use ($app){
+    return $app['twig']->render('login.html.twig', array());
+}) ->bind('login');
 //
 //$app->error(function (\Exception $e, Request $request, $code) use ($app) {
 //    if ($app['debug']) {
