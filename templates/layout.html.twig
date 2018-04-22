@@ -3,49 +3,60 @@
     <head>
         <title>My blog</title>
 
-        <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css" />
-
+        <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="../css/main.css" rel="stylesheet" type="text/css" />
 
     </head>
     <body>
         <header>
             <div class="wrapper">
-                <img src="">
-                <ul>
-                    <li>
-                        <a>Home</a>
-                    </li>
-                    <li>
-                        <a>About</a>
-                    </li>
-                    <li>
-                        <a>Login</a>
-                    </li>
-                </ul>
+                <nav>
+                    <h1 class="title">MyBlog</h1>
+                    <ul>
+                        <li>
+                            <a>Home</a>
+                        </li>
+                        <li>
+                            <a>About</a>
+                        </li>
+                        <li>
+                            <a>Login</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>
-        <main>
+        <main class="wrapper">
             <div class="postslist">
                 <ul>
-                    <li>
+                    <li class="post">
                         <article>
                             <div>
-                                <h2>Title</h2>
-                                <p>Autor</p>
-                                <p>Data</p>
+                                <h2 class="postTitle">Title</h2>
+                                <p class="description">18-09-1996</p>
+                                <p class="description">Diyawgdabwdkabwduia</p>
                             </div>
                             <div>
-                                <img src="">
+                                <img src="../img/obraz.png">
                             </div>
-                            <div>
-                                <p>tresc</p>
-                                <button>Syknij dalej</button>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie vitae odio vitae vulputate. Curabitur et porta magna, nec tincidunt nisi. Nunc a eleifend tellus. Sed gravida pellentesque tellus, ac cursus erat suscipit eget. Integer luctus turpis diam, vehicula ultrices augue posuere eget. Aenean semper, metus vitae laoreet commodo, augue urna porta sapien, ac pulvinar velit augue ac sem.   </p>
+                                <button>Rozwiń</button>
                             </div>
                         </article>
                     </li>
                 </ul>
             </div>
             <div class="info">
+                <div class="autor">
+                    <div class="avatar">
+                        <img src="../img/avatar.png">
+                    </div>
+
+                    <h2>nickname</h2>
+                    <a class="about_autor">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
+
+                </div>
 
             </div>
         </main>

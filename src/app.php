@@ -10,6 +10,7 @@ use Silex\Provider\FormServiceProvider;
 use Silex\Provider\TranslationServiceProvider;
 use Silex\Provider\SessionServiceProvider;
 use Silex\Provider\HttpFragmentServiceProvider;
+use Silex\Provider\AssetServiceProvider;
 use ORM\Provider\DoctrineORMServiceProvider;
 
 $app = new Application();
@@ -29,6 +30,14 @@ $app['twig'] = $app->share($app->extend('twig', function ($twig, $app) {
     // add custom globals, filters, tags, ...
     return $twig;
 }));
+
+$app->register(new AssetServiceProvider(), array(
+    'asset.version' => 'v1',
+    'asset.version_format' => '%s?version=%s',
+    'asset.named_packages' => array(
+        'css' => array('version' => 'css2', 'base_path' => '../web')
+    ),
+));
 
 $app->register(new SessionServiceProvider(), array(
     'session.storage.options' => array('cookie_lifetime' => 10800)
