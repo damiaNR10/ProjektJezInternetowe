@@ -149,6 +149,11 @@ nav ul li {
     color: #E74C3C;
 }
 
+.description i {
+    padding-right: 5px;
+    color:#9ba1a8;
+}
+
 .post .content p {
     margin: 15px 25px 20px;
     line-height: 17px;
@@ -171,6 +176,7 @@ nav ul li {
     margin-right: 30px;
     border:none;
     border-radius: 2px;
+    cursor:pointer;
 }
 
 .info {
@@ -232,6 +238,13 @@ footer {
     padding: 19px 0 19px 0;
     background-color: #293545;
     font-size: 14px;
+
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
 }
 
 footer a {
@@ -241,6 +254,19 @@ footer a {
 
 footer a span {
     color: #F57676;
+}
+
+footer button {
+    background-color: #F57676;
+    outline:none;
+    border:none;
+    color:#fff;
+    padding:5px 10px;
+    cursor:pointer;
+}
+
+footer button:hover {
+    background-color: #6d7683;
 }
 
 .login input{
