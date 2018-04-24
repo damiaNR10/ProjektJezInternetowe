@@ -46,6 +46,12 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin-right: 15px;
+    cursor:pointer;
+}
+
+nav ul li:hover {
+    cursor:pointer;
+    color: #E74C3C;
 }
 
 .title {
@@ -116,8 +122,9 @@ nav ul li {
     width:auto;
 }
 
-.postTitle:hover {
+.postTitle a:hover {
     color: #E74C3C;
+    cursor:pointer;
 
 }
 
@@ -139,6 +146,10 @@ nav ul li {
     font-size: 12px;
     text-transform: uppercase;
     color: #9ba1a8;
+}
+
+.description:hover {
+    cursor:default;
 }
 
 .description:first-of-type {
