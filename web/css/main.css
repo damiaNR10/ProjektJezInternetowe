@@ -47,11 +47,19 @@ nav ul li {
     display: inline-block;
     margin-right: 15px;
     cursor:pointer;
+    text-decoration: none;
+    color: #555555;
 }
 
-nav ul li:hover {
+nav ul li a {
+    text-decoration: none;
+    color: #555555;
+}
+
+nav ul li a:hover {
     cursor:pointer;
     color: #E74C3C;
+
 }
 
 .title {
