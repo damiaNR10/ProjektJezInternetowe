@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8e62e482-f859-4332-9d5a-bed2ff10209c" name="myDevil" url="http://myblog.matrog.pl">
+        <fileTransfer host="s11.mydevil.net" port="21" rootFolder="/domains/myblog.matrog.pl/public_html">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

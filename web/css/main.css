@@ -352,3 +352,26 @@ footer button:hover {
 .loginButton:hover {
     cursor:pointer;
 }
+
+
+.wrapper aside {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wrapper aside ul li {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 13px;
+    text-align: center;
+}
+
+.wrapper aside ul li:hover {
+    background-color: #F57676;
+    cursor:pointer;
+}
+
+.wrapper .content {
+    display: inline-block;
+    vertical-align: middle;
+}

@@ -2,7 +2,7 @@
 
 //$app->mount( '/acme', new Controller\AcmeController());
 $app->get('/', function () use ($app) {
-    return $app['twig']->render('layout.html.twig', array());
+    return $app['twig']->render('admin.html.twig', array());
 })
     ->bind('homepage');
 
