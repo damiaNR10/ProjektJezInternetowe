@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+    <main class="wrapper">
+
+        <aside>
+            <ul>
+                <li><a>Posts</a></li>
+                <li><a>Users</a></li>
+                <li><a>Settings</a></li>
+            </ul>
+        </aside>
+
+        <div class="content">
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Date</th>
+
+                </tr>
+                <tr>
+                    <td>Hipopotamy w wodzie</td>
+                    <td>Andrzej</td>
+                    <td>12.03.2015</td>
+
+                <tr>
+                    <td>Azerbejdżan</td>
+                    <td>Maciej</td>
+                    <td>22.05.2017</td>
+
+                </tr>
+                <tr>
+                    <td>Mikołaj</td>
+                    <td>Kasztany</td>
+                    <td>01.02.2018</td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+{% endblock %}

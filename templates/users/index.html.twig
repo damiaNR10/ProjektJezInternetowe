@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+    <main class="wrapper">
+
+        <aside>
+            <ul>
+                <li><a>Posts</a></li>
+                <li><a>Users</a></li>
+                <li><a>Settings</a></li>
+            </ul>
+        </aside>
+
+        <div class="content">
+            <table>
+                <tr>
+                    <th>UserID</th>
+                    <th>UserName</th>
+                    <th>Password</th>
+
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Andrzej</td>
+                    <td>haslo123</td>
+
+                <tr>
+                    <td>11</td>
+                    <td>Maciej</td>
+                    <td>haselo</td>
+
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Kasztan</td>
+                    <td>haselelo</td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+{% endblock %}

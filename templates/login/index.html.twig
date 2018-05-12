@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+    <main class="wrapper">
+
+        <h2 class="login_title">PLEASE LOGIN TO CONTINUE</h2>
+        <form>
+            <div class="login">
+                <label>
+                    <a>USERNAME </a>
+                </label>
+                <input>
+
+            </div>
+            <div class="login">
+                <label>
+                    <a>PASSWORD </a>
+                </label>
+                <input>
+
+            </div>
+            <button class="loginButton">LOGIN</button>
+        </form>
+    </main>
+{% endblock %}

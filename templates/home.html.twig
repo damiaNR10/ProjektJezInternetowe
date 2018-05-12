@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+    <main class="wrapper">
+        <div class="postslist">
+            <ul>
+                <li class="post">
+                    <article>
+                        <div>
+                            <h2 class="postTitle"><a>Title</a></h2>
+                            <p class="description"><i class="far fa-clock"></i>18-09-1996</p>
+                            <p class="description"><i class="fas fa-user"></i>Andrzej56</p>
+                        </div>
+                        <div>
+                            <img src="assets/img/obraz.png">
+                        </div>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie vitae odio vitae vulputate. Curabitur et porta magna, nec tincidunt nisi. Nunc a eleifend tellus. Sed gravida pellentesque tellus, ac cursus erat suscipit eget. Integer luctus turpis diam, vehicula ultrices augue posuere eget. Aenean semper, metus vitae laoreet commodo, augue urna porta sapien, ac pulvinar velit augue ac sem.   </p>
+                            <button>CONTINUE READING</button>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </div>
+        <div class="info">
+            <div class="autor">
+                <div class="avatar">
+                    <img src="assets/img/avatar.png">
+                </div>
+
+                <h2>nickname</h2>
+                <a class="about_autor">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
+
+            </div>
+
+        </div>
+    </main>
+{% endblock %}
