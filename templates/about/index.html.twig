@@ -3,18 +3,21 @@
 {% block title %}Hello {{ controller_name }}!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <main class="wrapper about_wrapper">
+        <h2 class="about_title">ABOUT</h2>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'src/Controller/AboutController.php'|file_link(0) }}">src/Controller/AboutController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'templates/about/index.html.twig'|file_link(0) }}">templates/about/index.html.twig</a></code></li>
-    </ul>
-</div>
+        <p class="about_p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et nibh ut erat elementum mollis. Nam ligula elit, rhoncus at tempus ut, ultricies sed est. Aliquam faucibus nunc lacus, et blandit velit efficitur vel. Duis bibendum ipsum vitae ipsum fermentum tempor in id felis. Maecenas euismod mauris ex, quis varius lectus rutrum nec. Maecenas ultrices, purus at auctor blandit, mi eros aliquam tellus, non mattis lorem ex ac ligula. Aliquam vestibulum mi quis nunc maximus, eget consequat urna rhoncus. Pellentesque quis velit eu metus lacinia pretium id sit amet tellus.
+        </p>
+        <img src="assets/img/about_image.jpg" />
+        <p class="about_p">
+            Etiam in semper risus. Aenean fringilla placerat molestie. Quisque felis nulla, tincidunt et ornare non, tincidunt non ligula. Phasellus est dui, accumsan eu sodales a, congue sit amet tortor. Maecenas et semper quam, a feugiat leo. Fusce in diam urna. Cras varius dui non dapibus aliquam. Donec tincidunt elementum eleifend. Fusce at mattis odio.
+        </p>
+        <p class="about_p">
+            Duis felis sapien, varius sed sem non, viverra molestie lacus. Fusce pulvinar suscipit quam vel vulputate. Donec nec justo congue, rhoncus ante et, condimentum elit. Pellentesque auctor vitae diam at pretium. Praesent pulvinar risus eu mi ultricies vestibulum. Aenean tellus justo, imperdiet vitae ornare vel, lacinia ac risus. Morbi accumsan auctor risus vel ornare.
+        </p>
+
+    </main>
+
 {% endblock %}

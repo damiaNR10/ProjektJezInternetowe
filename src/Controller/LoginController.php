@@ -10,10 +10,10 @@ class LoginController extends AbstractController
     /**
      * @Route("/login", name="login")
      */
-    public function index()
+    public function indexAction()
     {
       return $this->render('login/index.html.twig',[
-        'controller_name' => "Login Controller"
+        'controller_name' => "LoginController"
       ]);
     }
 }

@@ -1,14 +1,15 @@
 @font-face {
   font-family: 'RobotoSlab';
-  src: url('../fonts/RobotoSlab-Regular.eot');
-  src: url('../fonts/RobotoSlab-Regular.woff2') format('woff2'),
-  url('../fonts/RobotoSlab-Regular.woff') format('woff'),
-  url('../fonts/RobotoSlab-Regular.ttf') format('truetype'),
-  url('../fonts/RobotoSlab-Regular.svg#RobotoSlab-Regular') format('svg'),
-  url('../fonts/RobotoSlab-Regular.eot?#iefix') format('embedded-opentype');
+  src: url('../../assets/fonts/RobotoSlab-Regular.eot');
+  src: url('../../assets/fonts/RobotoSlab-Regular.woff2') format('woff2'),
+  url('../../assets/fonts/RobotoSlab-Regular.woff') format('woff'),
+  url('../../assets/fonts/RobotoSlab-Regular.ttf') format('truetype'),
+  url('../../assets/fonts/RobotoSlab-Regular.svg#RobotoSlab-Regular') format('svg'),
+  url('../../assets/fonts/RobotoSlab-Regular.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
+
 
 body {
   background-color: rgb(233, 240, 244);
@@ -18,6 +19,9 @@ header {
   background-color: rgb(255, 255, 255);
 }
 
+img{
+  width:100%;
+}
 
 .wrapper {
   width: 1000px;
@@ -86,26 +90,13 @@ nav ul li a:hover {
 
 .post {
   display: block;
-  margin-bottom: 30px;
   overflow: hidden;
   background-color: #FFFFFF;
   border-bottom: 1px solid #d3d5d7;
   -webkit-box-shadow: 0 0 5px 0 #e2e3e4;
   -moz-box-shadow: 0 0 5px 0 #e2e3e4;
   box-shadow: 0 0 5px 0 #e2e3e4;
-  display: block;
-  margin-bottom: 30px;
-  overflow: hidden;
-  background-color: #FFFFFF;
   border-bottom: 1px solid #d3d5d7;
-  -webkit-box-shadow: 0 0 5px 0 #e2e3e4;
-  -moz-box-shadow: 0 0 5px 0 #e2e3e4;
-  box-shadow: 0 0 5px 0 #e2e3e4;
-  background-color: #FFF;
-  border-bottom: 1px solid #d3d5d7;
-  -webkit-box-shadow: 0 0 5px 0 #e2e3e4;
-  -moz-box-shadow: 0 0 5px 0 #e2e3e4;
-  box-shadow: 0 0 5px 0 #e2e3e4;
   position: relative;
   padding: 9px 0;
   margin-bottom: 50px;
@@ -366,6 +357,12 @@ footer button:hover {
   text-align: center;
 }
 
+.wrapper aside ul li a{
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+}
+
 .wrapper aside ul li:hover {
   background-color: #F57676;
   cursor:pointer;
@@ -374,13 +371,55 @@ footer button:hover {
 .wrapper .content {
   display: inline-block;
   vertical-align: middle;
+    width:90%;
 }
 
-.wrapper .content table tr {
-  width: 100%;
+.wrapper .content table {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.wrapper .content table td {
+    font-family: "RobotoSlab";
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 27px;
 }
 
 .wrapper .content table tr th{
   color:#E74C3C;
   font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+
+.wrapper .about_title {
+  text-align:center;
+  color: #E74C3C;
+  font-family: "RobotoSlab";
+  margin-top:50px;
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.wrapper .about_p {
+  margin-bottom: 13px;
+  font-family: "RobotoSlab";
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 27px;
+  text-indent: 18px;
+}
+
+.wrapper .about_p:last-of-type {
+  padding-bottom: 12px;
+}
+
+.about_wrapper {
+  background-color: white;
+  padding: 0 25px;
+  -webkit-box-shadow: 0 0 5px 0 #e2e3e4;
+  -moz-box-shadow: 0 0 5px 0 #e2e3e4;
+  box-shadow: 0 0 5px 0 #e2e3e4;
 }
