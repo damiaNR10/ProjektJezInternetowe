@@ -176,7 +176,7 @@ nav ul li a:hover {
   color: #6d7683;
 }
 
-.post .content button {
+.post .content > a {
   display: block;
   float: right;
   text-align: center;
@@ -335,6 +335,7 @@ footer button:hover {
   border-radius: 2px;
   margin-top: 20px;
   margin-bottom: 230px;
+  cursor: pointer;
 }
 
 .registerButton{
@@ -352,6 +353,57 @@ footer button:hover {
     margin-right: 15px;
     margin-left: 15px;
     text-decoration: none;
+  cursor: pointer;
+}
+
+.createButton{
+  padding: 10px 50px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: normal;
+  background-color: #e74c3c;
+  color: #fff;
+  outline:none;
+  border:none;
+  border-radius: 2px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  margin-left: 20px;
+  display:inline-block;
+  cursor: pointer;
+}
+
+.deleteButton{
+  padding: 10px 50px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: normal;
+  background-color: #e74c3c;
+  color: #fff;
+  outline:none;
+  border:none;
+  border-radius: 2px;
+  margin-bottom: 80px;
+  margin-left: 20px;
+  display:inline-block;
+  cursor: pointer;
+}
+
+.updateButton{
+  padding: 10px 50px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: normal;
+  background-color: #e74c3c;
+  color: #fff;
+  outline:none;
+  border:none;
+  border-radius: 2px;
+  margin-top: 20px;
+  margin-bottom: -30px;
+  margin-left: 20px;
+  display:inline-block;
+  cursor: pointer;
 }
 
 
@@ -366,20 +418,25 @@ footer button:hover {
 
 .wrapper aside {
   display: inline-block;
-  vertical-align: middle;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background: #e74c3c;
 }
 
 .wrapper aside ul li {
   background-color: #e74c3c;
   color: #fff;
-  padding: 13px;
+
   text-align: center;
 }
 
 .wrapper aside ul li a{
   text-decoration: none;
   color: #fff;
-  width: 100%;
+  padding: 13px;
+  display:block;
 }
 
 .wrapper aside ul li:hover {
@@ -390,12 +447,22 @@ footer button:hover {
 .wrapper .content {
   display: inline-block;
   vertical-align: middle;
-    width:90%;
+  width:90%;
+}
+
+.wrapper_post{
+  position: relative;
+  min-height: 130px;
+}
+
+.wrapper_post .content{
+  margin-left: 9%;
 }
 
 .wrapper .content table {
     width: 100%;
     margin-left: 20px;
+    margin-top: 15px;
 }
 
 .wrapper .content table td {
@@ -412,6 +479,14 @@ footer button:hover {
     text-align: left;
 }
 
+.wrapper .content table tr{
+  border-bottom: 1px solid #E74C3C;
+}
+
+.wrapper .content table tr:last-child{
+  border-bottom: none;
+}
+
 .wrapper .about_title {
   text-align:center;
   color: #E74C3C;
@@ -420,6 +495,41 @@ footer button:hover {
   padding: 20px 0;
   font-weight: bold;
   font-size: 28px;
+}
+
+.wrapper .post_header{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.wrapper .post_title {
+  text-align:left;
+  color: #E74C3C;
+  font-family: "RobotoSlab";
+  margin-top:50px;
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.wrapper .post_date{
+  font-family: "RobotoSlab";
+  font-size:18px;
+  color: #E74C3C;
+  text-align: right;
+  margin-top: 50px;
+  padding: 20px 0;
+}
+
+.wrapper .post_date span{
+  color: #000;
+}
+
+.wrapper .post_content{
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .wrapper .about_p {
@@ -441,4 +551,35 @@ footer button:hover {
   -webkit-box-shadow: 0 0 5px 0 #e2e3e4;
   -moz-box-shadow: 0 0 5px 0 #e2e3e4;
   box-shadow: 0 0 5px 0 #e2e3e4;
+}
+
+.wrapper .new_post_content label{
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.wrapper .new_post_content input{
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #E74C3C;
+}
+
+.wrapper .new_post_content textarea{
+  width: 100%;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #E74C3C;
+  resize:none;
+}
+
+#post div:last-of-type{
+  display: none;
+}
+
+.inside-post{
+  margin-top: 65px;
 }

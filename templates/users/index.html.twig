@@ -3,7 +3,7 @@
 {% block title %}Hello {{ controller_name }}!{% endblock %}
 
 {% block body %}
-    <main class="wrapper">
+    <main class="wrapper wrapper_post">
 
         {% include 'shared/aside.html.twig' %}
 
@@ -15,22 +15,14 @@
                     <th>Password</th>
 
                 </tr>
+                {#{{ dump(users) }}#}
+                {% for user in users %}
                 <tr>
-                    <td>10</td>
-                    <td>Andrzej</td>
-                    <td>haslo123</td>
-
-                <tr>
-                    <td>11</td>
-                    <td>Maciej</td>
-                    <td>haselo</td>
-
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.username }}</td>
+                    <td>{{ user.password }}</td>
                 </tr>
-                <tr>
-                    <td>12</td>
-                    <td>Kasztan</td>
-                    <td>haselelo</td>
-                </tr>
+                {% endfor %}
             </table>
         </div>
 
